@@ -3,8 +3,12 @@ public class Main {
         int currentAccount = 100;
         int replenishmentAmount = 1200;
 
-        int bonus = replenishmentAmount/100;
-        if (replenishmentAmount > 1000);
+        int bonus;
+        if (replenishmentAmount > 1000) {
+            bonus = replenishmentAmount / 100;
+        } else {
+            bonus = 0;
+        }
 
         int totalAccount = currentAccount + replenishmentAmount + bonus;
         System.out.println(totalAccount);
